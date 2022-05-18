@@ -1,0 +1,32 @@
+
+            input[type=text],
+            input[type=email],
+            input[type=date],
+            input[type=file],
+            input[type=password],
+            input[type=submit],
+            button,
+            .alert-danger,
+            .form-floating {
+                width: 50%;
+            }
+
+            .ir-arriba {
+                display: none;
+                padding: 5px;
+                background: #13a4c5;
+                font-size: 25px;
+                color: rgb(162, 27, 27);
+                cursor: pointer;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .alert-danger {
+                border-radius: 3px;
+                border: 1px solid #C00;
+                margin: 10px;
+            }
+        
