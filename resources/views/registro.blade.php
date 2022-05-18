@@ -8,43 +8,8 @@
         <title>Laravel CRUD</title>
         <script src="{{asset('/js/jquery-3.6.0.min.js')}}"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <style>
-            input[type=text],
-            input[type=email],
-            input[type=date],
-            input[type=file],
-            input[type=password],
-            input[type=submit],
-            button,
-            .alert-danger,
-            .form-floating {
-                width: 50%;
-            }
-
-            .ir-arriba {
-                display: none;
-                padding: 5px;
-                background: #024959;
-                font-size: 25px;
-                color: #fff;
-                cursor: pointer;
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                border-radius: 10px 10px 0px 0px;
-            }
-
-            .alert-danger {
-                border-radius: 3px;
-                border: 1px solid #C00;
-                margin: 10px;
-            }
-        </style>
-    </head>
 
 
-
-            
             <div class="mb-3">
                 <label class="form-label">Nombre(s):</label>
                 <input type="text" class="form-control" name="nombre" value="{{old('nombre')}}" placeholder="Hector">
