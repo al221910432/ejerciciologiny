@@ -1,25 +1,4 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{asset('css/home.css')}}">
     </head>
-
+    
     <form class="row g-3">
         <div class="mb-3">
           <label for="validationDefault01" class="form-label">Nombre(s)</label>
@@ -52,7 +31,7 @@
         </div>
         <div class="mb-3">
           <label for="validationDefault04" class="form-label">Genero</label>
-          <input type="select" class="form-control" id="validationDefault04" value="" required>
+          <input type="text" class="form-control" id="validationDefault04" value="" required>
         </div>
         <div class="mb-3">
             <label for="validationDefault05" class="form-label">Correo Electronico</label>
@@ -69,4 +48,4 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
-      </form>
+      </form></html>
