@@ -14,7 +14,6 @@ class Registro extends Model
         'apm',
         'gen',
         'fn',
-        'email',
-        'password'
+        'email'
     ];
 }
