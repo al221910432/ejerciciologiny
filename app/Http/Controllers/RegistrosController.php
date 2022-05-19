@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Registro;
 
-class HomeController extends Controller
+class RegistrosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //
     }
 
     /**
@@ -35,8 +34,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        Registro::create(['nombre'=>$request->nombre, 'app'=>$request->app, 'apm'=>$request->apm, 'gen'=>$request->gen, 'fn'=>$request->fn, 'email'=>$request->email]);
-        return redirect()->route('inicio')->with('message','El registro ha sido exitoso');
+        //
     }
 
     /**

@@ -13,7 +13,7 @@ class CreateRegistroTable extends Migration
      */
     public function up()
     {
-        Schema::create('registro', function (Blueprint $table) {
+        Schema::create('registros', function (Blueprint $table) {
             $table->string('nombre', 15);
             $table->string('app',12);
             $table->string('apm',12);
@@ -32,6 +32,6 @@ class CreateRegistroTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('registro');
+        Schema::dropIfExists('registros');
     }
 }
