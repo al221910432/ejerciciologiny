@@ -35,10 +35,23 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        Registro::create(['nombre'=>$request->nombre, 'app'=>$request->app, 'apm'=>$request->apm, 'gen'=>$request->gen, 'fn'=>$request->fn, 'email'=>$request->email]);
-        return redirect()->route('inicio')->with('message','El registro ha sido exitoso');
-    }
 
+        $validated = $request->validate([
+            'nombre' => 'required||max:255',
+            'app' => 'required||max:255',
+            'apm' => 'required||max:255',
+            'gen' => 'required',
+            'fn' => 'required',
+            'email' => 'required',
+        ]);
+        return redirect()->route('inicio')->with('message','El registro ha sido exitoso');
+
+
+
+        //Registro::create(['nombre'=>$request->nombre, 'app'=>$request->app, 'apm'=>$request->apm, 'gen'=>$request->gen, 'fn'=>$request->fn, 'email'=>$request->email]);
+        //return redirect()->route('inicio')->with('message','El registro ha sido exitoso');
+    }
+ 
     /**
      * Display the specified resource.
      *
